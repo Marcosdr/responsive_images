@@ -1,0 +1,22 @@
+* {
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+img {
+    /* width: 500px; */
+    max-width: 100%;
+}
+
+@media (min-width: 760px) and (max-width: 960px) {
+    .half-width {
+        display: grid;
+        grid: auto / repeat(2, 1fr);
+        grid-gap: 4em;
+    }
+}
+
+/* and (max-width: 1499px) */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Responsive Images tutorial</h1>
+
+    
+    <p><strong>Disable cache in chrome</strong> (Network > Disable cache) to test the different sizes and DPR.</p>
+    <div class="full-width">
+        <img 
+            src="images/car500.jpg"
+            srcset="images/car500.jpg 500w, 
+                    images/car1000.jpg 1000w, 
+                    images/car1500.jpg 1500w" 
+            alt=""
+        >
+    </div>
+    <div class="half-width">
+        <img 
+            src="images/car500.jpg"
+            srcset="images/car500.jpg 500w, 
+                    images/car1000.jpg 1000w, 
+                    images/car1500.jpg 1500w"
+            sizes="(min-width: 760px) 50vw, 100vw"
+            alt=""
+        >
+        <p>
+            Collaboratively reinvent viral solutions via best-of-breed models. Professionally leverage existing optimal web-readiness through wireless users. Professionally benchmark resource-leveling communities through team driven best practices. Holisticly productivate fully researched ROI for prospective e-services. Completely leverage existing flexible networks without B2C schemas.
+
+            Progressively monetize interdependent markets through high-quality strategic theme areas. Objectively seize holistic experiences vis-a-vis efficient customer service. Professionally foster interoperable infomediaries rather than world-class e-business. Competently reintermediate functional technology whereas principle-centered bandwidth. Competently re-engineer world-class architectures through resource sucking manufactured products.
+
+            Objectively deploy innovative content rather than parallel web services. Interactively build open-source products through proactive e-commerce. Dramatically re-engineer clicks-and-mortar internal or "organic" sources through standardized expertise. Objectively reconceptualize scalable web-readiness through collaborative portals. Conveniently transition sustainable potentialities via efficient channels.
+        </p>
+    </div>
+
+    <p><small>See: <a href="https://www.youtube.com/watch?v=2QYpkrX2N48">Srcset and Sizes attribute</a></small></p>
+</body>
+</html>

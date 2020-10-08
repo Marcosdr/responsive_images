@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Picture Images tutorial</h1>
+    <p><strong>Disable cache in chrome</strong> (Network > Disable cache) to test the different sizes and DPR.</p>
+    
+    <div class="half-width">
+        <picture>
+            <source 
+                media="(min-width: 960px)"
+                srcset="images/carLarge.jpg 534w,
+                        images/carLarge@2x.jpg 1068w,
+                        images/carLarge@3x.jpg 1602w">
+            <source 
+                media="(min-width: 600px)"
+                srcset="images/carMedium.jpg">
+            <source
+                srcset="images/carSmall.jpg">
+            <img 
+                src="images/carLarge.jpg" >
+        </picture>
+        <div>
+            <h2>Let's talk about cars</h2>
+        <p>Continually underwhelm cross-unit deliverables rather than accurate e-services. Efficiently e-enable timely metrics for performance based systems. Enthusiastically evolve intermandated products after sticky e-business. Compellingly simplify synergistic technology and premier functionalities. Objectively engineer sustainable benefits with exceptional users.
+
+            Dynamically customize interoperable users through frictionless expertise. Completely myocardinate top-line methodologies via quality products. Authoritatively predominate business experiences with state of the art relationships. Appropriately build competitive content through reliable catalysts for change. Dramatically fashion state of the art web services vis-a-vis resource-leveling quality vectors.</p>
+        </div>
+    </div>
+    
+    <p><small>See: <a href="https://www.youtube.com/watch?v=Rik3gHT24AM&list=PL4-IK0AVhVjODqX-gN6KH68Tt_zrYiTwA&index=6">Picture tag</a></small></p>
+</body>
+</html>
